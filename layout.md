@@ -5,4 +5,5 @@ figures/despiking_example_2/despiking_example_2.png
 Photometry1.tex
 figures/refsdal_psfphot_lightcurves_151026/refsdal_psfphot_lightcurves_151026.png
 Time Delay Measurement from Spline Fitting.tex
+figures/pycs_JHsplinefit_lightcurve_151025best/pycs_JHsplinefit_lightcurve_151025best.png
 Discussion.tex
