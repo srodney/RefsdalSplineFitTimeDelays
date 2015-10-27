@@ -6,4 +6,5 @@ Photometry1.tex
 figures/refsdal_psfphot_lightcurves_151026/refsdal_psfphot_lightcurves_151026.png
 Time Delay Measurement from Spline Fitting.tex
 figures/pycs_JHsplinefit_lightcurve_151025best/pycs_JHsplinefit_lightcurve_151025best.png
+figures/pycs_JHsplinefit_residuals_151025best/pycs_JHsplinefit_residuals_151025best.png
 Discussion.tex
