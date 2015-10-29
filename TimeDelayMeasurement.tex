@@ -1,0 +1,25 @@
+\section{Time Delay Measurement}\label{sec:TimeDelayMeasurement}
+
+To measure the time delays between the four Refsdal sources, we use the ``Python Curve Shifting'' (\PyCS) code,\footnote{v1.0, \url{http://obswww.unige.ch/~tewes/cosmograil/public/pycs/index.html}} which was orginally developed by the COSMOGRAIL collaboration\footnote{Cosmological Monitoring of Gravitational Lenses} for the measurement of gravitational lensing time delays in quasars \citet{Tewes:2013}.  The \pycs software implements three methods for determining time delays: simultaneous spline fitting, variability of regression differences, and dispersion minimization.  The COSMOGRAIL project has successfully applied all three methods to densely sampled light curves of multiply-imaged quasars that span a decade or more in time with typical samplings of $\sim5-10$ days \citep[e.g.][]{Tewes:2013a}.   By comparison, the SN Refsdal light curves have a much smaller time baseline ($\sim$250 days) and longer sampling steps over most of that period ($\sim10-15$ days).  Because of this,  we use only the first technique in this work, as a spline curve with limited flexibility is best suited for constrained fits to the relatively sparse SN Refsdal light curves.
+
+\subsection{Microlensing}\label{sec:Microlensing}
+The \pycs code can also accommodate {\it microlensing} features in the light curve, using superimposed splines to represent these effects that would manifest in a single image.  SN Refsdal could be affected by the traditional microlensing that has been observed in lensed quasars \citep[e.g.][]{Kochanek:2004}.  In this case, the motion of stars in the lensing galaxy changes the intervening lensing potential and causes fluctuations in the light curve on a timescale of months or years  \citep[e.g.][]{Wyithe:2001,Schechter:2002,Schechter:2004}.  \citet{Dobler:2006} describe a second form of microlensing that is unique to lensed SNe.  The SN light passing through the lensing plane is distorted by a web of lensing potentials formed by all the intervening stars in the lensing galaxy.  As the photosphere of the SN expands, it intersects a larger section of this complex web, which can result in microlensing fluctuations that affect the light curve on timescales of weeks to months.  Analysis of such microlensing features in a lensed SN light curve could potentially be used to make inferences about the mass fraction and projected spatial density of the stellar population in the lensing galaxy.
+
+\citet{Dobler:2006} find that most microlensed SN will exhibit significant fluctuations of $>0.5$ mag, adding distortions that will significantly limit the precision that can be achieved in measurement of their time delays.  However, the microlensing environments modeled by \citep{Dobler:2006} are for a SN lensed by a single isolated galaxy, and the situation for SN Refsdal may be less dire, as the added shear from the \macs1149 cluster potential may result in light paths through the lensing galaxy that are farther from the galactic nucleus and therefore intersect relatively sparse stellar environments.  
+
+A microlensing analysis of SN Refsdal will soon be able to take advantage of the light curve of the fifth image (SX), which is lensed only by the \macs1149 cluster potential and not also directly affected by any cluster member galaxies.  The light curve of SX, though expected to be substantially fainter than S1-S4, should be relatively free of microlensing, since its light path does not pass through any individual galaxy, and should be minimally affected by intracluster stars or the outskirts of the \macs1149 Brightest Cluster Galaxy (BCG).  Given the complexity and prospects for improvements using the SX light curve, we defer this analysis of microlensing to future work.  
+
+\subsection{\pycs Spline Fitting}\label{sec:PycsSplineFitting}
+
+Application of {\tt PyCS} to SN Refsdal: 
+
+ * finding the minimal number of spline knots for accurate representation of the data
+
+ * tests with variation of initial conditions, exclusion of outlier points, removal of the noisy S4 curve
+
+ * booststrap monte carlo simulations to constrain the time delay uncertainty.
+ 
+Figure showing the composite J+H light curve and the spline fit. 
+
+
+
