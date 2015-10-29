@@ -1,8 +1,11 @@
 \section{Observations}\label{sec:Observations}
 
-Description of the HST observations from GLASS, HFF, FrontierSN, and the Refsdal-ToO programs. 
+TODO: Description of the HST observations from GLASS, HFF, FrontierSN, and the Refsdal-ToO programs. 
 
-Description of the "despiking" procedure devised by P.Kelly
+
+Some of the HST observations were executed with the telescope oriented such that a diffraction spike from the nearby bright star (roughly 10\arcsec\ south-west of the SN) overlapped the position of one or more of the SN Refsdal source positions.  These images were processed through an additional ``despiking'' procedure to enable less biased photometric measurements.  The diffraction spike pattern on HST in the WFC3-IR detector is close to symmetric about both axes, so we could generate a rough model for the contaminating spike by centering the image on the star, and then rotating the difference image by 90\deg\ in a clockwise direction.  We then remove the spike by subtracting the rotated difference image from the original unrotated version, which effectively removes the majority of the contaminating flux at the Refsdal source locations, as shown in Figure~\ref{fig:Despiking}.  We examined modifications to this approach, such as using a 180\deg\ or 270\deg\ rotation, or a median of three rotated versions.  We found that a single 90\deg\ clockwise rotation was most effective, and alternatives did not substantially affect the resulting photometry.
+
+
 
 
 
